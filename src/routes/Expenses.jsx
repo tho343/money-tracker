@@ -39,23 +39,26 @@ export default function Expenses() {
             </div>
 
           </div>
-          {expenses.map((e) => {
-            return (
-              <div key={e.id} className="expense-item">
-                <div className="left">
-                  <div className="amount">
-                    {currencyFormatter.format(e.amount)}
+          <div className="expense-items-container">
+            {expenses.map((e) => {
+              return (
+                <div key={e.id} className="expense-item">
+                  <div className="left">
+                    <div className="amount">
+                      {currencyFormatter.format(e.amount)}
+                    </div>
+                    <div>{e.name}</div>
                   </div>
-                  <div>{e.name}</div>
-                </div>
 
-                <div className="right">
-                  <div className="date">{e.date}</div>
-                  <GrClose onClick={() => deleteExpense(e.id)} />
+                  <div className="right">
+                    <div className="date">{e.date}</div>
+                    <GrClose onClick={() => deleteExpense(e.id)} />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
         </div>
         <CategoryItem />
 

@@ -4,6 +4,7 @@ import { useTracker } from '../context/TrackerContext';
 import { GrClose } from "react-icons/gr";
 import { currencyFormatter } from '../utils';
 import AddIncomeForm from '../components/addIncomeForm';
+import incomeBannerImage from "../assets/incomeBannerImage.svg";
 export default function Income(props) {
   const [showModalAddIncome, setShowModalAddIncome] = useState(false);
   const { incomes, deleteIncome } = useTracker();
@@ -16,11 +17,11 @@ export default function Income(props) {
 
           <div className="expense-summary-card">
             <div className="image-banner-container">
-              <img />
+              <img src={incomeBannerImage} />
             </div>
             <div className="summary-header">
               <h1 >
-                Your income :
+                Your earning
                 <span>{currencyFormatter.format(totalIncome)}</span>
               </h1>
               <div

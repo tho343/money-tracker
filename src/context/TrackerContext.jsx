@@ -62,10 +62,11 @@ export const TrackerProvider = ({ children }) => {
                 name: name,
                 amount: amount,
                 date: date
+
             }]
         })
     }
-    const addExpense = ({ name, categoryId, amount, date }) => {
+    const addExpense = ({ name, categoryId, amount, date, day, month, year }) => {
         setExpenses(prevExpenses => {
             return [...prevExpenses,
             {
@@ -73,7 +74,8 @@ export const TrackerProvider = ({ children }) => {
                 categoryId: categoryId,
                 name: name,
                 amount: amount,
-                date: date
+                date: date,
+                day: day
             }]
         })
 

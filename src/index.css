@@ -88,7 +88,8 @@ button[type=submit]{
   height:100vh;
   align-items: center;
   flex-direction: column;
-    justify-content: center;
+  padding-top: 5em;
+  row-gap: 10em;
 }
 .btn{
   text-align: center;
@@ -187,7 +188,7 @@ form{
 .expenses-container{
   width: 570px;
   height:50vh;
-  overflow-y: hidden;
+ 
 }
 .expense-item{
   display: flex;
@@ -206,6 +207,10 @@ form{
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.expense-items-container{
+  overflow-y:scroll;
+  height: 12em;
 }
 /* category-item */
 .categories-container{
@@ -244,9 +249,14 @@ form{
 }
 
 .image-banner-container{
-  width: 25%;
+  width: 30%;
+  transition: ease-in 2s;
 }
 .summary-header{
   display: flex;
   justify-content: space-between;
+}
+/* graph */
+.data-bar{
+  border-top-right-radius: 5px;
 }

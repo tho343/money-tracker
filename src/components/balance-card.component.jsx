@@ -9,12 +9,12 @@ export default function BalanceCard() {
 
     return (
         <Fragment>
-            <div class="header-container card">
-                <div class="header-left">
+            <div className="header-container card">
+                <div className="header-left">
                     <p>My balance</p>
-                    <span class="balance" id="balance">{currencyFormatter.format(balance)}</span>
+                    <span className="balance" id="balance">{currencyFormatter.format(balance)}</span>
                 </div>
-                <div class="header-right">
+                <div className="header-right">
                     <img src={logo} alt="logo icon with 1 outline circle and filled color circle" />
                 </div>
 
