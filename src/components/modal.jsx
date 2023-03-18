@@ -2,12 +2,13 @@ import React, { Fragment, useRef } from 'react'
 import { GrClose } from 'react-icons/gr'
 import { useTracker } from '../context/TrackerContext';
 export default function Modal(props) {
+    const dateArr = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
     const nameRef = useRef();
     const amountRef = useRef();
     const dateRef = useRef();
     const categoryIdRef = useRef();
     const { addIncome, addExpense, categories } = useTracker();
-    const { show, onCloseHandle, name, onCloseHanle } = props;
+    const { show, onCloseHandle, name } = props;
     const handleSubmitIncome = (e) => {
         e.preventDefault();
         addIncome({
@@ -19,14 +20,14 @@ export default function Modal(props) {
     }
     const handleSubmitExpense = (e) => {
         e.preventDefault();
-
+        const dateInput = new Date(dateRef.current.value);
         addExpense({
             name: nameRef.current.value,
             amount: parseFloat(amountRef.current.value),
-            date: dateRef.current.value,
-            categoryId: categoryIdRef.current.value
+            date: dateInput.toISOString().split("T")[0],
+            categoryId: categoryIdRef.current.value,
+            day: dateArr[dateInput.getDay()]
         })
-
     }
     return (
         <div className={show ? "modal-overlay open-modal" : "modal-overlay"}>
