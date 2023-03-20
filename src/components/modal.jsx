@@ -36,11 +36,11 @@ export default function Modal(props) {
                     <form onSubmit={name === "income" ? handleSubmitIncome : handleSubmitExpense}>
 
                         <h1>Add {name}</h1>
-                        <label for="name">name</label>
+                        <label >name</label>
                         <input type="text" ref={nameRef} required></input>
-                        <label for="amount">amount</label>
+                        <label >amount</label>
                         <input type="number" ref={amountRef} name="amount" min={0} step={0.01} required></input>
-                        <label for="date">Date</label>
+                        <label >Date</label>
                         <input type="date" name="date" ref={dateRef} required></input>
                         {name === "expense" && (
                             <Fragment>

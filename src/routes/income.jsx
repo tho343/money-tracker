@@ -3,6 +3,7 @@ import { Fragment, useState } from 'react';
 import { useTracker } from '../context/TrackerContext';
 import { GrClose } from "react-icons/gr";
 import { currencyFormatter } from '../utils';
+import { RiAddFill } from "react-icons/ri";
 import AddIncomeForm from '../components/addIncomeForm';
 import incomeBannerImage from "../assets/incomeBannerImage.svg";
 export default function Income(props) {
@@ -30,7 +31,8 @@ export default function Income(props) {
                   setShowModalAddIncome(true);
                 }}
               >
-                Add Income
+                <RiAddFill size={30} textAnchor={"add expense"} />
+                Income
               </div>
             </div>
 

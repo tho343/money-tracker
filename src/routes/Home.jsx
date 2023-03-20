@@ -3,6 +3,7 @@ import AddExpenseForm from '../components/addExpenseForm'
 import AddIncomeForm from '../components/addIncomeForm'
 import BalanceCard from '../components/balance-card.component'
 import ChartCard from '../components/chart-card.component'
+import { RiAddFill } from "react-icons/ri";
 import Modal from '../components/modal'
 export default function Home() {
   const [showModalAddIncome, setShowModalAddIncome] = useState(false);
@@ -14,8 +15,10 @@ export default function Home() {
       <div className="container">
         <BalanceCard />
         <div className="btns-container">
-          <div className="add-balance btn" onClick={() => { setShowModalAddIncome(true); console.log(showModalAddIncome) }}>Add Income</div>
-          <div className="add-expense btn" onClick={() => { setShowModalAddExpense(true) }}>Add Expense</div>
+          <div className="add-balance btn" onClick={() => { setShowModalAddIncome(true); console.log(showModalAddIncome) }}><RiAddFill size={30} textAnchor={"add expense"} />
+            Income</div>
+          <div className="add-expense btn" onClick={() => { setShowModalAddExpense(true) }}><RiAddFill size={30} textAnchor={"add expense"} />
+            Expense</div>
         </div>
         <ChartCard />
 

@@ -2,7 +2,7 @@ import React from "react";
 import { currencyFormatter } from "../utils";
 import { useTracker } from "../context/TrackerContext";
 import shopping from "../assets/shopping.svg"
-import entertainment from "../assets/entertainment.svg"
+import eating from "../assets/eating.svg"
 import grocery from "../assets/grocery.svg"
 import rent from "../assets/rent.svg"
 export default function CategoryItem() {

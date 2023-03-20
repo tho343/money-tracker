@@ -3,7 +3,7 @@ import { useState } from "react";
 import 'chart.css';
 import { monthArr } from "../utils"
 import { useTracker } from "../context/TrackerContext";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Cell, LabelList } from "recharts";
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell, LabelList } from "recharts";
 const data = [{ name: 'Mon', amount: 200.50 },
 { name: 'Tue', amount: 100 },
 { name: 'Tue', amount: 100 },
@@ -47,15 +47,19 @@ export default function ChartCard() {
             <div className="stats-header">
                 <h1>Spending - Last 7 days</h1>
                 <p>{`${monthArr[today.getMonth()]} - ${today.getFullYear()}`}</p>
-                <BarChart width={500} height={300} data={currentWeekDataArr}>
-                    <XAxis dataKey="name" tickLine={false} axisLine={false} />
-                    <YAxis tickLine={false} axisLine={false} domain={[0, 1000]} hide />
-                    <Bar className="data-bar" dataKey="amount" barSize={30} radius={5} fill="hsl(10, 79%, 65%)"
-                    >
-                        <LabelList dataKey="amount" position="top" />
-                    </ Bar>
-                </BarChart>
+
+                <ResponsiveContainer width="100%" height="60%">
+                    <BarChart data={currentWeekDataArr} >
+                        <XAxis dataKey="name" tickLine={false} axisLine={false} />
+                        <YAxis tickLine={false} axisLine={false} domain={[0, 500]} hide />
+                        <Bar className="data-bar" dataKey="amount" barSize={30} radius={5} fill="hsl(10, 79%, 65%)"
+                        >
+                            <LabelList dataKey="amount" position="top" />
+                        </ Bar>
+                    </BarChart>
+                </ResponsiveContainer>
+
             </div>
-        </div>
+        </div >
     );
 }

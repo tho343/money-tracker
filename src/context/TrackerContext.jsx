@@ -38,7 +38,7 @@ export const TrackerProvider = ({ children }) => {
         },
         {
             id: "3",
-            name: "entertainment"
+            name: "eating"
 
         }
         ,

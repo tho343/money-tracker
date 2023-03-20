@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { useTracker } from "../context/TrackerContext";
 import { currencyFormatter } from "../utils";
 import { GrClose } from "react-icons/gr";
+import { RiAddFill } from "react-icons/ri";
 import AddExpenseForm from "../components/addExpenseForm";
 import CategoryItem from "../components/category-item";
 import expenseBannerImage from "../assets/expenseBannerImage.svg";
@@ -34,7 +35,8 @@ export default function Expenses() {
                   setShowModalAddExpense(true);
                 }}
               >
-                Add Expense
+                <RiAddFill size={30} textAnchor={"add expense"} />
+                Expense
               </div>
             </div>
 
