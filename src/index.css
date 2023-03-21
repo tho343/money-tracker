@@ -107,8 +107,8 @@ button[type=submit]{
   text-align: center;
   width: 5em;
   height:4em;
-  color: var(--cream);
-  background-color: hsl(10, 79%, 65%);
+  color: var(--dark-brown-color);
+  background-color: var(--cyan-color);
   border-radius:var(--outer-border-radius);
   cursor: pointer;
 }
