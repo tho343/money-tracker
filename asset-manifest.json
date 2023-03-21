@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/money-tracker/static/css/main.a726bef6.css",
+    "main.js": "/money-tracker/static/js/main.52d8a663.js",
+    "static/js/787.23d124b2.chunk.js": "/money-tracker/static/js/787.23d124b2.chunk.js",
+    "static/media/grocery.svg": "/money-tracker/static/media/grocery.d34be9b290d739f27d8ed3d9f3ac03bd.svg",
+    "static/media/expenseBannerImage.svg": "/money-tracker/static/media/expenseBannerImage.97fa535783739e021033023e04a041f0.svg",
+    "static/media/incomeBannerImage.svg": "/money-tracker/static/media/incomeBannerImage.fc831d4e80957877b0cc51875d27ec6a.svg",
+    "static/media/eating.svg": "/money-tracker/static/media/eating.e3eb15a990dd52461b2e70a14a5e160b.svg",
+    "static/media/Plain credit card-pana.svg": "/money-tracker/static/media/Plain credit card-pana.947ad4165b5eb673346d.svg",
+    "static/media/rent.svg": "/money-tracker/static/media/rent.947ad4165b5eb673346d1e6427ac51fc.svg",
+    "static/media/shopping.svg": "/money-tracker/static/media/shopping.f505b44505b93425d79451593354f664.svg",
+    "static/media/logo.svg": "/money-tracker/static/media/logo.99d5b9138a1a64cc6858cdac9a9d3bd4.svg",
+    "index.html": "/money-tracker/index.html",
+    "main.a726bef6.css.map": "/money-tracker/static/css/main.a726bef6.css.map",
+    "main.52d8a663.js.map": "/money-tracker/static/js/main.52d8a663.js.map",
+    "787.23d124b2.chunk.js.map": "/money-tracker/static/js/787.23d124b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a726bef6.css",
+    "static/js/main.52d8a663.js"
+  ]
+}
