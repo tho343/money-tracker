@@ -278,6 +278,10 @@ form{
 .data-bar{
   border-top-right-radius: 5px;
 }
+/* sidebar */
+.toggle-btn{
+  visibility: hidden;
+}
 /* media */
 @media only screen and (max-width:600px) {
   h1{
@@ -330,4 +334,31 @@ form{
   .form-container{
     width:90%;
   }
+  .nav-links-container{
+    flex-direction: column;
+    height:0;
+    overflow: hidden;
+    justify-content: center;
+    transition: all 0.3s linear;
+  }
+  .sidebar-container{
+    display: block;
+    height: auto;
+  }
+  .sidebar-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .toggle-btn{
+    visibility: visible;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--cyan-color);
+  }
+  .show-links{
+    height: 10rem;
+  }
+  
 }
