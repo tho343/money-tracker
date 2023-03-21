@@ -1,12 +1,12 @@
-#Money Tracking Web App
+# Money Tracking Web App
 
 Simple personal money management web app created with React, Vanilla CSS
 
-##Introduction
+## Introduction
 
 :wave: Welcome to my personal project, this is a money-flow web application, which allow user to manange, and keep track of their incomes, and spendings. Users can add, remove incomes, expenses, view previous expenses or incomes for the regarding months.
 
-##Technologies
+## Technologies
 
 * CSS3
 * React 18.2.0
@@ -14,7 +14,7 @@ Simple personal money management web app created with React, Vanilla CSS
   ### Libraries
   * React-icons
   * Chart.css
-##Project status
+## Project status
  * #### Finished 
     :pencil2:  Basic functions : add, delete, view incomes, expenses 
     :pencil2:  Summarized expenses summary within 1 week using customized chart from **Chart.css** 
