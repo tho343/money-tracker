@@ -24,6 +24,6 @@ Simple personal money management web app created with React, Vanilla CSS
 ## Previews
 Home page
 
-![Homepage screenshot!](../money-tracker/src/assets/home-screenshot.png)
+![Homepage screenshot!](../money-tracker/)
 ![expense page screenshot!](../money-tracker//src/assets/expense-screenshot.png)
 ![income page screenshot!](../money-tracker//src/assets/income-screenshots.png)
