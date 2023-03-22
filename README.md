@@ -16,11 +16,11 @@ Simple personal money management web app created with React, Vanilla CSS
   * Chart.css
 ## Project status
  * #### Finished 
-    :pencil2:  Basic functions : add, delete, view incomes, expenses 
-    :pencil2:  Summarized expenses summary within 1 week using customized chart from **Chart.css** 
-    :pencil2: Styled responsive web app using **Vanilla CSS3**
+    * :pencil2:  Basic functions : add, delete, view incomes, expenses 
+    * :pencil2:  Summarized expenses summary within 1 week using customized chart from **Chart.css** 
+    * :pencil2: Styled responsive web app using **Vanilla CSS3**
 * #### Pending
-   :pencil2: Adding preloader 
+   * :pencil2: Adding preloader 
 ## Previews
 Home page
 
